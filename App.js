@@ -27,7 +27,7 @@ const App: () => React$Node = () => {
   useEffect(() => {
     const weatherApi = async () => {
       if (consultaApi) {
-        const apiKey = '5538ba7d76d0f58749122abb5cbfb6ab';
+        const apiKey = 'yourApiKey';
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiKey}`;
         const response = await fetch(url);
         const responseJson = await response.json();
